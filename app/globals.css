@@ -24,3 +24,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .perspective-distant {
+    perspective: 1000px;
+  }
+  
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .rotate-x-30 {
+    transform: rotateX(30deg);
+  }
+  
+  .-rotate-y-30 {
+    transform: rotateY(-30deg);
+  }
+  
+  .rotate-z-30 {
+    transform: rotateZ(30deg);
+  }
+  
+  .translate-z-25 {
+    transform: translateZ(25px);
+  }
+  
+  .bg-size-\[10px_10px\] {
+    background-size: 10px 10px;
+  }
+}

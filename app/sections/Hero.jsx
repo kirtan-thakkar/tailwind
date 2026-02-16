@@ -1,4 +1,5 @@
 import { Outfit } from "next/font/google";
+import Card from "./Card";
 
 const outfit = Outfit({
   weights: ["400", "500", "600", "700"],
@@ -7,6 +8,7 @@ const outfit = Outfit({
 
 const Hero = ()=>{
     return(
+        <>
         <section className="container">
             <div className="text-white h-screen flex flex-col items-center my-[-100] justify-center">
                 <h1 className={`${outfit.className} max-w-2xl text-7xl font-medium tracking-tighter text-center bg-clip-text bg-linear-to-b from-neutral-50 to-neutral-500 text-transparent`}>
@@ -21,6 +23,9 @@ const Hero = ()=>{
 
             </div>  
         </section>
+       
+        </>
+        
     )
 }
 export default Hero;
