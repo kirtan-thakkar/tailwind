@@ -54,3 +54,7 @@ body {
     background-size: 10px 10px;
   }
 }
+
+.card{
+  @apply rounded-md shadow-sm overflow-hidden my-2 relative
+}
