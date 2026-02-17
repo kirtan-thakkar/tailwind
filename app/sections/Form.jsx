@@ -6,7 +6,7 @@ const outfit = Outfit({
 
 const Form =()=>{
     return (
-        <div>
+        <div className="w-full h-full px-8 py-14 bg-neutral-200 text-black">
             <h1 className={outfit.className}>Form</h1>
         </div>
     )
