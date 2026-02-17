@@ -34,9 +34,9 @@ const Form = () => {
         </label>
         <input
           id="email"
-          type="text"
+          type="email"
           placeholder="Enter your Email address"
-          className={`${outfit.className} focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-neutral-500 focus:bg-neutral-200 w-full px-4 py-2 bg-white rounded-lg shadow-2xl transition-all duration-300 ease-in-out`}
+          className={`${outfit.className} border invalid:border-red-500 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-neutral-500 focus:bg-neutral-200 w-full px-4 py-2 bg-white rounded-lg shadow-2xl transition-all duration-300 ease-in-out`}
         ></input>
         {/*  */}
         <label
