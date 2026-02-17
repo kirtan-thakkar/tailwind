@@ -8,7 +8,7 @@ const Form = () => {
   return (
     <form className="flex flex-col items-center w-full h-full px-8 py-14 bg-neutral-200 text-black">
       <h1
-        className={`${outfit.className} text-5xl font-medium tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-700`}
+        className={`${outfit.className} text-5xl font-medium tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-700 selection:bg-black/30`}
       >
         Crazy ass form
       </h1>
