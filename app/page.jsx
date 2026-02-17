@@ -11,7 +11,7 @@ export default function Home() {
       <section className="bg-white max-w-4xl mx-auto flex items-start justify-center">
         <Card />
       </section>
-      <section className="mt-24 max-w-4xl h-screen mx-auto flex justify-center">
+      <section className="mt-24 max-w-4xl h-screen mx-auto ">
         <Form />
 
       </section>
