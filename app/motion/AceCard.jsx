@@ -21,9 +21,14 @@ const AceCard = () => {
           Beautiful and modern UI components built with Tailwind CSS and Framer
           Motion.
         </p>
-        <div className="flex items-center justify-center">
-            
-          <button className={`${outfit.className} bg-amber-500 text-xs text-white px-4 py-2 rounded-lg cursor-pointer`}> <Image src="/image.png" alt="logo" width={80} height={80} /> {" "}Aceternity</button>
+        <div id="button-container" className="mt-2 flex items-center justify-center">
+          <button
+            className={`${outfit.className} text-xs px-4 py-2 rounded-lg cursor-pointer flex items-center gap-1 shadow-acecard`}
+          >
+            {" "}
+            <Image src="/image.png" alt="logo" width={25} height={25} className="h-4 w-4" />{" "}
+            <span className={outfit.className}>Aceternity</span>
+          </button>
         </div>
       </div>
     </>
