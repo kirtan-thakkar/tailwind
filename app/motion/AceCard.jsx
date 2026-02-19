@@ -10,7 +10,7 @@ const outfit = Outfit({
 const AceCard = () => {
   return (
     <>
-      <div className="size-80 h-[26rem]! bg-white flex rounded-xl shadow-aceCard p-4 flex-col gap-2">
+      <div className="size-80 h-[27rem]! bg-white flex rounded-xl shadow-aceCard p-4 flex-col gap-2">
         <h2
           className={`${outfit.className} text-xl text-center font-medium tracking-tight`}
         >
@@ -41,7 +41,7 @@ const AceCard = () => {
             <X className="ml-1 size-3"></X>
           </button>
         </div>
-         <div className="h-full bg-red-500 flex flex-1"></div>
+         <div className="h-full bg-gray-100 mt-4 flex flex-1 border border-dashed border-neutral-200"></div>
       </div>
     </>
   );
