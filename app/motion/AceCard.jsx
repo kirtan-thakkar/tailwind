@@ -26,6 +26,10 @@ const AceCard = () => {
             scale:0.98,
             filter:"blur(10px)"
           }} 
+          transition={{
+            duration:0.9,
+            ease:"easeInOut"
+          }}
           className="size-80 h-[32rem]! bg-neutral-50  flex rounded-xl shadow-aceCard p-4 flex-col gap-2">
             <h2
               className={`${outfit.className} text-xl text-center font-medium tracking-tight`}
