@@ -1,3 +1,4 @@
+"use client";
 import { Outfit } from "next/font/google";
 import { motion } from "motion/react";
 import { X } from "lucide-react";
@@ -47,7 +48,23 @@ const AceCard = () => {
           </button>
         </div>
         <div className="relative h-full bg-gray-100 mt-4 flex flex-1 border border-dashed border-neutral-200 rounded-lg">
-          <div className="absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200">
+          {/* Motion divs start */}
+          <motion.div
+          initial={{
+            opacity:0,
+            scale:0.98,
+            filter:"blur(10px)"
+
+          }}
+          animate={{
+            opacity:1,
+            filter:"blur(0px)"
+          }} 
+          transition={{
+            duration:0.3,
+            
+          }}
+          className="absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200">
             <div className={`${outfit.className} p-4 text-xs flex gap-4`}>
               <div className="size-8 flex shadow-acecard rounded-md items-center justify-center bg-neutral-50">
                 <MessageCircleMore className="size-6 " />
@@ -106,8 +123,9 @@ const AceCard = () => {
             >
               <Plus className="size-4" />
               <p className="text-xs font-medium">Create new project</p>
-            </div>  
-          </div>
+            </div>
+          </motion.div>
+          {/* Motion divs end */}
         </div>
       </div>
     </>
