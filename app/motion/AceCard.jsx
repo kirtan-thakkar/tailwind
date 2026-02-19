@@ -1,5 +1,6 @@
 import { Outfit } from "next/font/google";
 import { motion } from "motion/react";
+import { X } from "lucide-react";
 import Image from "next/image";
 const outfit = Outfit({
   subsets: ["latin"],
@@ -21,15 +22,26 @@ const AceCard = () => {
           Beautiful and modern UI components built with Tailwind CSS and Framer
           Motion.
         </p>
-        <div id="button-container" className="mt-2 flex items-center justify-center">
+        <div
+          id="button-container"
+          className="mt-2 flex items-center justify-center"
+        >
           <button
             className={`${outfit.className} text-xs px-4 py-2 rounded-lg cursor-pointer flex items-center gap-1 shadow-acecard`}
           >
             {" "}
-            <Image src="/image.png" alt="logo" width={25} height={25} className="h-4 w-4" />{" "}
+            <Image
+              src="/image.png"
+              alt="logo"
+              width={25}
+              height={25}
+              className="h-4 w-4"
+            />{" "}
             <span className={outfit.className}>Aceternity</span>
+            <X className="ml-1 size-3"></X>
           </button>
         </div>
+         <div className="h-full bg-red-500 flex flex-1"></div>
       </div>
     </>
   );
