@@ -1,4 +1,5 @@
 "use client";
+
 import { Outfit } from "next/font/google";
 import { motion } from "motion/react";
 import { X } from "lucide-react";
