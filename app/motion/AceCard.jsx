@@ -1,6 +1,10 @@
 import { Outfit } from "next/font/google";
 import { motion } from "motion/react";
 import { X } from "lucide-react";
+import { ChartNoAxesCombined } from 'lucide-react';
+import { Zap } from 'lucide-react';
+import { MessageCircleMore } from 'lucide-react';
+import { PenTool } from 'lucide-react';
 import Image from "next/image";
 const outfit = Outfit({
   subsets: ["latin"],
@@ -10,7 +14,7 @@ const outfit = Outfit({
 const AceCard = () => {
   return (
     <>
-      <div className="size-80 h-[27rem]! bg-white flex rounded-xl shadow-aceCard p-4 flex-col gap-2">
+      <div className="size-80 h-[28rem]! bg-neutral-50  flex rounded-xl shadow-aceCard p-4 flex-col gap-2">
         <h2
           className={`${outfit.className} text-xl text-center font-medium tracking-tight`}
         >
@@ -41,7 +45,50 @@ const AceCard = () => {
             <X className="ml-1 size-3"></X>
           </button>
         </div>
-         <div className="h-full bg-gray-100 mt-4 flex flex-1 border border-dashed border-neutral-200"></div>
+        <div className="relative h-full bg-gray-100 mt-4 flex flex-1 border border-dashed border-neutral-200 rounded-lg">
+          <div className="absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200">
+            <div className={`${outfit.className} p-4 text-xs flex gap-4`}>
+              <div className="size-8 flex shadow-acecard rounded-md items-center justify-center bg-neutral-50">
+                <MessageCircleMore className="size-6 "/>
+              </div>
+              <div className="flex flex-col gap-1">
+                <p className="text-xs text-neutral-900 font-medium">Message Deivery</p>
+                <p className="text-xs text-neutral-500">
+                  Lighting fast message delivery
+                </p>
+              </div>
+            </div>
+            <div className={`${outfit.className} p-4 text-xs flex gap-4`}>
+                <div className="size-8 flex shadow-acecard rounded-md items-center justify-center bg-neutral-50">
+                <ChartNoAxesCombined  className="size-6 "/>
+              </div>
+              <div className="flex flex-col gap-1 w-full">
+                <p className="text-xs text-neutral-900 font-medium">Chart Analysis</p>
+                <p className="text-xs text-neutral-500">
+                chart analysis for data-driven decisions
+                </p>
+              </div>
+            </div>
+            <div className={`${outfit.className} p-4 text-xs flex gap-4 `}><div className="size-8 flex shadow-acecard rounded-md items-center justify-center bg-neutral-50 ">
+                <Zap className="size-6 "/>
+              </div>
+              <div className="flex flex-col gap-1">
+                <p className="text-xs text-neutral-900 font-medium">Lightning Fast</p>
+                <p className="text-xs text-neutral-500">
+                  Lightning fast performance
+                </p>
+              </div></div>
+            <div className={`${outfit.className} p-4 text-xs flex gap-4`}><div className="size-8 flex shadow-acecard rounded-md items-center justify-center bg-neutral-50">
+                <PenTool className="size-6 "/>
+              </div>
+              <div className="flex flex-col gap-1 ">
+                <p className="text-xs text-neutral-900 font-medium">Customization</p>
+                <p className="text-xs text-neutral-500">
+                  Fully customizable UI components
+                </p>
+              </div></div>
+          </div>
+        </div>
       </div>
     </>
   );

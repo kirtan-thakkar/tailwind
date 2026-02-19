@@ -17,7 +17,7 @@ export default function Home() {
       <section className="mt-24 max-w-4xl mx-auto ">
         <Form />
       </section>
-      <section className="bg-neutral-100 max-4xl mx-auto mt-12 flex justify-center items-center h-screen">
+      <section className=" max-4xl mx-auto mt-12 flex justify-center items-center h-screen">
         <AceCard />
       </section>
       </ReactLenis>
