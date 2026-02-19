@@ -59,15 +59,17 @@ const AceCard = () => {
             filter:"blur(10px)"
 
           }}
-          animate={{
+
+          whileHover={{
             opacity:1,
+            scale:1.05,
             filter:"blur(0px)"
-          }} 
+          }}
           transition={{
-            duration:1,
+            duration:0.3,
             ease:"easeInOut",
           }}
-          className="absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200">
+          className="absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200 border border-neutral-200">
             <div className={`${outfit.className} p-4 text-xs flex gap-4`}>
               <div className="size-8 flex shadow-acecard rounded-md items-center justify-center bg-neutral-50">
                 <MessageCircleMore className="size-6 " />
