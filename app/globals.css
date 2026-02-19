@@ -37,6 +37,13 @@ body {
   }
 }
 
+@theme{
+  --shadow-acecard: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15)
+}
+@theme{
+  --shadow-aceCard: 0 3px 10px rgba(0, 0, 0, 0.2)
+}
+
 .card{
   @apply rounded-md shadow-sm overflow-hidden my-2 relative
 }

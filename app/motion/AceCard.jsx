@@ -8,7 +8,7 @@ const outfit = Outfit({
 const AceCard=()=>{
     return(
         <>
-        <div>
+        <div className="size-80 bg-white flex justify-center  shadow-aceCard">
             AceCard !
         </div>
         </>
