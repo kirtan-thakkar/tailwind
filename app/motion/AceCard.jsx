@@ -48,6 +48,8 @@ const AceCard = () => {
             <X className="ml-1 size-3"></X>
           </button>
         </div>
+
+        {/* the below div is the overlapping div onto which we have added our absolute div so that we can easlily add animation using motion */}
         <div className="relative h-full bg-gray-100 mt-4 flex flex-1 border border-dashed border-neutral-200 rounded-lg">
           {/* Motion divs start */}
           <motion.div
@@ -62,8 +64,8 @@ const AceCard = () => {
             filter:"blur(0px)"
           }} 
           transition={{
-            duration:0.3,
-            
+            duration:1,
+            ease:"easeInOut",
           }}
           className="absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200">
             <div className={`${outfit.className} p-4 text-xs flex gap-4`}>
