@@ -21,13 +21,23 @@ const AceCard = () => {
       <AnimatePresence>
         {open && (
           <motion.div
+          initial={{
+            opacity:0,
+            scale:0.98,
+            filter:"blur(10px)"
+          }}
+          animate={{
+            opacity:1,
+            scale:1,
+            filter:"blur(0px)"
+          }}
           exit={{
             opacity:0,
             scale:0.98,
             filter:"blur(10px)"
           }} 
           transition={{
-            duration:0.9,
+            duration:0.5,
             ease:"easeInOut"
           }}
           className="size-80 h-[32rem]! bg-neutral-50  flex rounded-xl shadow-aceCard p-4 flex-col gap-2">
@@ -57,7 +67,7 @@ const AceCard = () => {
                   height={25}
                   className="h-4 w-4"
                 />{" "}
-                <span className={outfit.className}>Aceternity</span>
+                <span className={outfit.className}>Kirtan</span>
                 <button
                   onClick={() => {
                     setOpen(false);
