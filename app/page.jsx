@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <ReactLenis root>
-        <section className="">
+        <section className="bg-neutral-900">
         <Hero />
       </section>
       <section className="bg-white max-w-4xl mx-auto flex items-start justify-center">
