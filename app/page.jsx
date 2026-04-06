@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Card from "./sections/Card";
 import Form from "./sections/Form";
 import AceCard from "./motion/AceCard";
+import OrbitCard from "./motion/OrbitCard";
 import { ReactLenis } from 'lenis/react'
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
       <section className="mt-24 max-w-4xl mx-auto ">
         <Form />
       </section>
-      <section className=" max-4xl mx-auto mt-12 flex justify-center items-center h-screen">
+      <section className=" max-4xl mx-auto mt-12 flex flex-wrap gap-8 justify-center items-center min-h-screen py-10">
         <AceCard />
+        <OrbitCard />
       </section>
       </ReactLenis>
     </>
