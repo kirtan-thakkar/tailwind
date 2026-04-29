@@ -19,6 +19,14 @@ export default function Home() {
       </section>
       <section className=" max-4xl mx-auto mt-12 flex flex-wrap gap-8 justify-center items-center min-h-screen py-10">
         <AceCard />
+        <div>
+          <motion.h1 
+          initial={{ opacity: 0, filter:"blur(10px)"}}
+          whileInView={{ opacity: 1, filter:"blur(0px)"}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-4xl font-bold text-gray-800"
+          >End of ace card using motion</motion.h1>
+        </div>
       </section>
       </ReactLenis>
     </>
