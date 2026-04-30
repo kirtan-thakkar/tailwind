@@ -27,6 +27,9 @@ export default function Home() {
           className="text-4xl font-bold text-gray-800"
           >End of ace card using motion</motion.h1>
         </div>
+        <motion.div>
+          <h2>End</h2>
+        </motion.div>
       </section>
       </ReactLenis>
     </>
