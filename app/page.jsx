@@ -26,6 +26,12 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-4xl font-bold text-gray-800"
           >End of ace card using motion</motion.h1>
+          <motion.h1 
+          initial={{ opacity: 0, filter:"blur(10px)"}}
+          whileInView={{ opacity: 1, filter:"blur(0px)"}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-4xl font-bold text-gray-600"
+          >Byee byee xd</motion.h1>
         </div>
         <motion.div>
           <h2>End</h2>
