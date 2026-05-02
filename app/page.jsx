@@ -33,6 +33,11 @@ export default function Home() {
           className="text-4xl font-bold text-gray-600"
           >Byee byee xd</motion.h1>
         </div>
+        <div>
+          <h2>
+            This is a simple example of a card component that can be used to display
+          </h2>
+        </div>
         <motion.div>
           <h2>End</h2>
         </motion.div>
