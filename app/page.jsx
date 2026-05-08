@@ -41,9 +41,6 @@ export default function Home() {
         <motion.div>
           <h2>End</h2>
         </motion.div>
-        <motion.div>
-          <p>Made with love by kirtan thakkar!</p>
-        </motion.div>
         
       </section>
       </ReactLenis>
