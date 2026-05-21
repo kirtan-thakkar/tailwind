@@ -4,6 +4,7 @@ import Card from "./sections/Card";
 import Form from "./sections/Form";
 import AceCard from "./motion/AceCard";
 import { ReactLenis } from 'lenis/react'
+import TryPage from "./motion/try";
 export default function Home() {
   return (
     <>
@@ -33,11 +34,7 @@ export default function Home() {
           className="text-4xl font-bold text-gray-600"
           >Byee byee xd</motion.h1>
         </div>
-        <div>
-          <h2>
-            This is a simple example of a card component that can be used to display
-          </h2>
-        </div>
+        <TryPage />
         <motion.div>
           <h2>End</h2>
         </motion.div>
